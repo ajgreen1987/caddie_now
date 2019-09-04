@@ -39,7 +39,11 @@ Debug:
 * Error Messages provided via nice UI, VSCode support
 
 
-Ubuntu notes from ubuntu and first reviews
+
+# Ubuntu notes from ubuntu and first reviews
+These are notes from my first run through to get Rails up and running on a different machine to test portability of environments. I got rails up and running, but switched from the initial notebook idea to todos for simplicity. The notes still reflect the old versions though. Keeping these here as reference, but nothing else.
+
+# These are a little random
 
 A simple API to service a todos app.
 
@@ -106,33 +110,7 @@ $ rails --version
 Rails 6.0.0
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Deployment
-
-Run locally
-Deploy to AWS with serverless
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-
+### Ins
 ## Dev Process
 
 At a high level we need an API to serve JSON to a generic front end. On the backend we will have 'Notebook' and 'Note' models. 'Notebook' has many 'Notes'. 
