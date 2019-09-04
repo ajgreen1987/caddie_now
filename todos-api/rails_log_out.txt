@@ -1,0 +1,475 @@
+Dump of terminal for general review.
+
+in <top (required)>'
+
+  8) Items API GET /todos/:todo_id/items/:id when todo item does not exist returns a not found message
+     Failure/Error: name { Faker::String.character }
+     
+     NoMethodError:
+       undefined method `character' for Faker::String:Class
+     # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+     # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+     # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  9) Items API POST /todos/:todo_id/items when request attributes are valid returns status code 201
+     Failure/Error: name { Faker::String.character }
+     
+     NoMethodError:
+       undefined method `character' for Faker::String:Class
+     # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+     # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+     # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+     # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  10) Items API POST /todos/:todo_id/items when an invalid request returns status code 422
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  11) Items API POST /todos/:todo_id/items when an invalid request returns a failure message
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  12) Items API PUT /todos/:todo_id/items/:id when item exists returns status code 204
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  13) Items API PUT /todos/:todo_id/items/:id when item exists updates the item
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  14) Items API PUT /todos/:todo_id/items/:id when the item does not exist returns status code 404
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  15) Items API PUT /todos/:todo_id/items/:id when the item does not exist returns a not found message
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+  16) Items API DELETE /todos/:id returns status code 204
+      Failure/Error: name { Faker::String.character }
+      
+      NoMethodError:
+        undefined method `character' for Faker::String:Class
+      # ./spec/factories/items.rb:3:in `block (3 levels) in <main>'
+      # ./spec/requests/items_spec.rb:6:in `block (2 levels) in <main>'
+      # ./spec/rails_helper.rb:54:in `block (3 levels) in <top (required)>'
+      # ./spec/rails_helper.rb:53:in `block (2 levels) in <top (required)>'
+
+Finished in 1.22 seconds (files took 2.87 seconds to load)
+34 examples, 16 failures
+
+Failed examples:
+
+rspec ./spec/requests/items_spec.rb:15 # Items API GET /todos/:todo_id/items when todo exists returns status code 200
+rspec ./spec/requests/items_spec.rb:19 # Items API GET /todos/:todo_id/items when todo exists returns all todo items
+rspec ./spec/requests/items_spec.rb:27 # Items API GET /todos/:todo_id/items when todo does not exist returns status code 404
+rspec ./spec/requests/items_spec.rb:31 # Items API GET /todos/:todo_id/items when todo does not exist returns a not found message
+rspec ./spec/requests/items_spec.rb:42 # Items API GET /todos/:todo_id/items/:id when todo item exists returns status code 200
+rspec ./spec/requests/items_spec.rb:46 # Items API GET /todos/:todo_id/items/:id when todo item exists returns the item
+rspec ./spec/requests/items_spec.rb:54 # Items API GET /todos/:todo_id/items/:id when todo item does not exist returns status code 404
+rspec ./spec/requests/items_spec.rb:58 # Items API GET /todos/:todo_id/items/:id when todo item does not exist returns a not found message
+rspec ./spec/requests/items_spec.rb:71 # Items API POST /todos/:todo_id/items when request attributes are valid returns status code 201
+rspec ./spec/requests/items_spec.rb:79 # Items API POST /todos/:todo_id/items when an invalid request returns status code 422
+rspec ./spec/requests/items_spec.rb:83 # Items API POST /todos/:todo_id/items when an invalid request returns a failure message
+rspec ./spec/requests/items_spec.rb:96 # Items API PUT /todos/:todo_id/items/:id when item exists returns status code 204
+rspec ./spec/requests/items_spec.rb:100 # Items API PUT /todos/:todo_id/items/:id when item exists updates the item
+rspec ./spec/requests/items_spec.rb:109 # Items API PUT /todos/:todo_id/items/:id when the item does not exist returns status code 404
+rspec ./spec/requests/items_spec.rb:113 # Items API PUT /todos/:todo_id/items/:id when the item does not exist returns a not found message
+rspec ./spec/requests/items_spec.rb:123 # Items API DELETE /todos/:id returns status code 204
+
+Andrews-MacBook:todos-api ajgreen$ bundle exec rspec
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+done { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/items.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+todo_id { nil }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/items.rb:5)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+done { false }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/items.rb:4)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+todo_id { nil }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/items.rb:5)
+rails aborted!
+ActiveRecord::NoEnvironmentInSchemaError: 
+
+Environment data not found in the schema. To resolve this issue, run: 
+
+        rails db:environment:set RAILS_ENV=test
+
+/Users/ajgreen/Documents/caddie_now/todos-api/bin/rails:9:in `<top (required)>'
+/Users/ajgreen/Documents/caddie_now/todos-api/bin/spring:15:in `require'
+/Users/ajgreen/Documents/caddie_now/todos-api/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+Tasks: TOP => db:test:load => db:test:purge => db:check_protected_environments
+(See full trace by running task with --trace)
+...../Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+./Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+/Users/ajgreen/Documents/caddie_now/todos-api/spec/factories/todos.rb:4: Passing `digits` with the 1st argument of `Number.number` is deprecated. Use keyword argument like `Number.number(digits: ...)` instead.
+.
+
+Finished in 2.15 seconds (files took 2.79 seconds to load)
+34 examples, 0 failures
+
+Andrews-MacBook:todos-api ajgreen$ rails s
+=> Booting Puma
+=> Rails 6.0.0 application starting in development 
+=> Run `rails server --help` for more startup options
+Puma starting in single mode...
+* Version 3.12.1 (ruby 2.6.3-p62), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+Started GET "/" for ::1 at 2019-09-03 23:32:42 -0400
+   (0.8ms)  SELECT sqlite_version(*)
+   (0.2ms)  SELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ajgreen/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ajgreen/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.0ms | Allocations: 490)
+Completed 200 OK in 37ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 2699)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-09-03 23:32:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/todos" for ::1 at 2019-09-03 23:38:43 -0400
+   (0.2ms)  SELECT sqlite_version(*)
+Processing by TodosController#index as HTML
+  Todo Load (0.5ms)  SELECT "todos".* FROM "todos"
+  ↳ app/controllers/concerns/response.rb:3:in `json_response'
+Completed 200 OK in 20ms (Views: 7.6ms | ActiveRecord: 1.8ms | Allocations: 2542)
+
+
+Started GET "/todos" for ::1 at 2019-09-03 23:52:16 -0400
+   (0.2ms)  SELECT sqlite_version(*)
+Processing by TodosController#index as */*
+  Todo Load (0.7ms)  SELECT "todos".* FROM "todos"
+  ↳ app/controllers/concerns/response.rb:3:in `json_response'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.7ms | Allocations: 783)
+
+
+Started POST "/todos" for ::1 at 2019-09-03 23:53:14 -0400
+Processing by TodosController#create as HTML
+  Parameters: {"title"=>"Test", "created_by"=>"1", "todo"=>{"title"=>"Test", "created_by"=>"1"}}
+Unpermitted parameter: :todo
+   (0.1ms)  begin transaction
+  ↳ app/controllers/todos_controller.rb:12:in `create'
+  Todo Create (0.9ms)  INSERT INTO "todos" ("title", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Test"], ["created_by", "1"], ["created_at", "2019-09-04 03:53:14.900859"], ["updated_at", "2019-09-04 03:53:14.900859"]]
+  ↳ app/controllers/todos_controller.rb:12:in `create'
+   (1.2ms)  commit transaction
+  ↳ app/controllers/todos_controller.rb:12:in `create'
+Completed 201 Created in 13ms (Views: 0.8ms | ActiveRecord: 2.8ms | Allocations: 5599)
+
+
+Started GET "/todos" for ::1 at 2019-09-03 23:53:23 -0400
+Processing by TodosController#index as */*
+  Todo Load (0.2ms)  SELECT "todos".* FROM "todos"
+  ↳ app/controllers/concerns/response.rb:3:in `json_response'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 918)
+
+
+^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2019-09-03 23:53:45 -0400 ===
+- Goodbye!
+Exiting
+
+Rails testing
+
+Using httpie (CLI http client)
+Andrews-MacBook:todos-api ajgreen$ http POST :3000/todos title=Test created_by=1
+HTTP/1.1 201 Created
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e004280839235dc0b5a2617436b4463d"
+Referrer-Policy: strict-origin-when-cross-origin
+Transfer-Encoding: chunked
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: f97e7f39-563e-4f71-969b-d8ef97b712dc
+X-Runtime: 0.015652
+X-XSS-Protection: 1; mode=block
+
+{
+    "created_at": "2019-09-04T03:53:14.900Z",
+    "created_by": "1",
+    "id": 1,
+    "title": "Test",
+    "updated_at": "2019-09-04T03:53:14.900Z"
+}
+
+Andrews-MacBook:todos-api ajgreen$ http :3000/todosHTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"fb505f369b8a372250f6ce32491ac977"
+Referrer-Policy: strict-origin-when-cross-origin
+Transfer-Encoding: chunked
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: c3b05fc2-2e99-4e33-9035-b4ddbba2f2bd
+X-Runtime: 0.005304
+X-XSS-Protection: 1; mode=block
+
+[
+    {
+        "created_at": "2019-09-04T03:53:14.900Z",
+        "created_by": "1",
+        "id": 1,
+        "title": "Test",
+        "updated_at": "2019-09-04T03:53:14.900Z"
+    }
+]
+
+Andrews-MacBook:todos-api ajgreen$ 
