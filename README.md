@@ -19,6 +19,8 @@ You can use your favorite HTTP client to create records following standard HTTP 
 * PUT /todos/:todo_id/items/:id
 * DELETE /todos/:todo_id/items/1
 
+Run the tests via `rpsec` from within the todo-apis directory
+
 Run the server via `rails s`
 
 Todo App
